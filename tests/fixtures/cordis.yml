@@ -1,0 +1,7 @@
+- id: winnotify-test
+  name: ./host.js
+  config:
+    welcome: false
+    notificationDelayMs: 10
+    heartbeatMs: 500
+    presenceTtlMs: 1500

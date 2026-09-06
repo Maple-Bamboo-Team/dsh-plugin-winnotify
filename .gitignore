@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+.install-backups/
+.npm-logs/
+.test-home/
+.test-output/

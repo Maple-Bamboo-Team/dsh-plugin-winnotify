@@ -1,0 +1,4 @@
+- insert:
+    - id: winnotify
+      name: dsh-plugin-winnotify
+      config: {}
