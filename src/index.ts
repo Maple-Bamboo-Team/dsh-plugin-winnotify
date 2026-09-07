@@ -125,7 +125,7 @@ export function apply(ctx: Context, input: Partial<Options> = {}): void {
     if (focus.focused(destination.ids)) return;
     pending.queued = true;
     const reason = interactionReason(pending.reason, label(destination.session));
-    const body = inlineBody('等待回答', reason);
+    const body = inlineBody(pending.kind === 'approval' ? '等待处理' : '等待回答', reason);
     const item = notice(`${pending.kind}:${pending.agent.id}:${++requestNumber}`, label(destination.session), body, destination.id);
     void queue.schedule(options.notificationDelayMs, () => deliver(item, () => pending.active && !focus.focused(destination.ids)))
       .then(sent => { pending.queued = false; pending.notified ||= sent; });

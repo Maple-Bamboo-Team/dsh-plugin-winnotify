@@ -80,7 +80,7 @@ test('Loader composition observes real Session events, focus, approval and unloa
   await delay(30);
   assert.equal(notices.length, count + 1);
   assert.equal(notices.at(-1).title, 'main');
-  assert.equal(notices.at(-1).body, '等待回答：状态探测——如果现在是早上开工前，你通常会？');
+  assert.equal(notices.at(-1).body, '等待处理：状态探测——如果现在是早上开工前，你通常会？');
   await presence(5, false);
   await delay(30);
   assert.equal(notices.length, count + 1);
