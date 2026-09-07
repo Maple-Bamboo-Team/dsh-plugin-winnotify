@@ -7,7 +7,7 @@ DeepSeek Harness 的 Windows 原生 Toast 通知插件。
 需要 Windows 10/11、Node.js 22.19+ 和已安装的 dsh。在 PowerShell 中执行：
 
 ```powershell
-dsh plugin --profile web add github:Maple-Bamboo-Team/dsh-plugin-winnotify
+dsh plugin --profile web add https://codeload.github.com/Maple-Bamboo-Team/dsh-plugin-winnotify/tar.gz/refs/heads/main --ignore-scripts
 ```
 
 安装后重启 `dsh web` 并刷新页面。
